@@ -15,7 +15,7 @@
       html += item.text;
 
       if (item.link && anchorText) {
-        html += ' <a href="' + item.link + '">' + anchorText + '</a>';
+        html += ' <a href="' + item.link + '" target="_blank">' + anchorText + '</a>';
       }
 
       html += "<br>";
