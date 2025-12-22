@@ -1,6 +1,6 @@
 (function () {
 
-  const QUERY_URL = "https://cdn.jsdelivr.net/gh/nanangkus/jsload@refs/heads/main/teks.json";
+  const TEKS_URL = "https://cdn.jsdelivr.net/gh/nanangkus/jsload@refs/heads/main/teks.json";
   const MAX_TRY = 20;
   let attempt = 0;
 
@@ -44,7 +44,7 @@
   }
 
   function tryInject() {
-    fetch(QUERY_URL)
+    fetch(TEKS_URL)
       .then(r => r.json())
       .then(json => {
         if (inject(createArticle(json))) return;
