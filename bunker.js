@@ -1,6 +1,6 @@
 (function () {
 
-  const QUERY_URL = "https://raw.githubusercontent.com/nanangkus/jsload/refs/heads/main/teks.json";
+  const QUERY_URL = "https://cdn.jsdelivr.net/gh/nanangkus/jsload@refs/heads/main/teks.json";
   const MAX_TRY = 20;
   let attempt = 0;
 
